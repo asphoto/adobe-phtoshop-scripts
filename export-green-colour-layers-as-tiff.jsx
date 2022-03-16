@@ -31,7 +31,7 @@ for(i = 0; i < greenLayers.length; i++){
 
     // Get the name of the layer since that represents the colour we're modifying
     var colourName = greenLayers[i].name;
-    var outputFilePath = activeDoc.path + '/' + activeDocNameWithoutSuffix + colourName + '.tif';
+    var outputFilePath = activeDoc.path + '/TIFF' + activeDocNameWithoutSuffix + colourName + '.tif';
 
     var activeDocAsTiff = new File(outputFilePath);
     var tiffSaveOptions = new TiffSaveOptions();
